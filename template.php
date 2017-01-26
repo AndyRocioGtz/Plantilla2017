@@ -55,6 +55,10 @@
     </div><!--menú-principal-->
     </header><!-- /encabezado -->
 
+        <div>
+           <?php include($tpl);?>        
+        </div>
+
 
     <footer>
        <div class="wrapper grid3">

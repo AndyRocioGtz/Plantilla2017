@@ -1,7 +1,7 @@
 <?php
 include_once($_SERVER['DOCUMENT_ROOT'].'/openerp.class.php');
 $rpc = new OpenERP();
-    $rpc->login("admin", "admin", "registro", "localhost:8069/xmlrpc/");
+    $rpc->login("admin", "admin", "registro8", "localhost:8069/xmlrpc/");
     //---------------------------------------------------------------//
     $domain=Array(
     );
