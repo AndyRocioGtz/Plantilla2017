@@ -1,0 +1,12 @@
+.grid2 .col-ico-rigth {
+    float: right;
+    margin-left: 2%;
+    margin-bottom: 15px;
+    width: 25%;
+    padding-left:55px; 
+}
+
+.grid2 .col-info-rigth {
+    float: right;
+    width: 35%;
+}

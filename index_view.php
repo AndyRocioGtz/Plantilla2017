@@ -18,17 +18,17 @@
         </div>
         </article>
           <!-- FlexSlider -->
-          <script defer src="scripts/jquery.flexslider.js"></script>
-          <script type="text/javascript">
-            $(function(){
-              SyntaxHighlighter.all();
-            });
-            $(window).load(function(){
-              $('.flexslider').flexslider({
-                animation: "slide",
-              });
-            });
-          </script>
+              <script defer src="scripts/jquery.flexslider.js"></script>
+              <script type="text/javascript">
+                $(function(){
+                  SyntaxHighlighter.all();
+                });
+                $(window).load(function(){
+                  $('.flexslider').flexslider({
+                    animation: "slide",
+                  });
+                });
+              </script>
         
 
         <article class="col-5">
@@ -36,32 +36,30 @@
             <ul class="enlaces">
                 <li><a href="segurenet.php">SEGUREnet</a></li>
                 <li><a href="consultaremota.php">Consulta Remota</a></li>
-                <li><a href="http://www.erpp.guanajuato.gob.mx/serv_electronicos/" target="_blank">Solicitud de Certificados en Línea</a></li>
-                <li><a href="http://www.erpp.guanajuato.gob.mx/precaptura/" target="_blank">Precaptura en Línea</a></li>
-                <li><a href="http://www.erpp.guanajuato.gob.mx/estrados/" target="_blank">Consulta de Estrados</a></li>
-                <li><a href="http://www.erpp.guanajuato.gob.mx/consultaerpp/" target="_blank">Verificación de Boletas de Resolución</a></li>
+                <li><a href="estadisticas.php">Estadísticas</a></li>
+                <li><a href="estruct.php">Estructura General</a></li> 
             </ul>
         </article>
     </div>
     <!-- Dirección General de Registros Públicos-->
     <div class="wrapper grid2">
     <div style=" padding-bottom: 20px; width: 100%;">
-        <div class="sec1-tramite"><img class="tramites-icon1" src="http://guanajuato.gob.mx/images/tramites/icono1.png"><label class="tittle-tra">Dirección de Registros Públicos</label><br><br>
+        <div class="sec1-tramite"><img class="tramites-icon1" src="http://guanajuato.gob.mx/images/tramites/icono1.png"><label class="tittle-tra">Trámites y servicios en Línea del Registro Público</label><br><br>
             <ul class="tramite-lst">
-              <li type="circle"><a class="link-tramite-p" href="oficinas_rpp.php">Directorio de Oficinas Registrales</a></li>
-              <li type="circle"><a class="link-tramite-p" href="estadisticas.php">Estadísticas</a></li>
-              <li type="circle"><a class="link-tramite-p" href="files/CALENDARIO DIAS INHABILES 2017.pdf">Calendario</a></li>
-              <li type="circle"><a class="link-tramite-p" href="estruct.php">Estructura General</a></li>
+              <li type="circle"><a class="link-tramite-p" href="http://www.erpp.guanajuato.gob.mx/serv_electronicos/" target="_blank">Solicitud de Certificados en Línea</a></li>
+              <li type="circle"><a class="link-tramite-p" href="http://www.erpp.guanajuato.gob.mx/precaptura/" target="_blank">Precaptura en Línea</a></li>
+              <li type="circle"><a class="link-tramite-p" href="http://www.erpp.guanajuato.gob.mx/estrados/" target="_blank">Consulta de Estrados</a></li>
+              <li type="circle"><a class="link-tramite-p" href="http://www.erpp.guanajuato.gob.mx/consultaerpp/" target="_blank">Verificación de Boletas de Resolución</a></li>
             </ul>
             <a class="ver-mas-ts" href="dg.php">Acerca de Dirección General de Registros Públicos</a>
         </div>
     <div class="sect-midt"></div>
         <!-- Dirección de Notarías-->
-        <div class="sec3-tramite"><img class="tramites-icon2" src="http://guanajuato.gob.mx/images/tramites/icono1.png"><label class="tittle-tra">Dirección de Notarías</label><br><br>
+        <div class="sec3-tramite"><img class="tramites-icon2" src="http://guanajuato.gob.mx/images/tramites/icono2.png"><label class="tittle-tra">Servicios en Línea de Dirección Notarías</label><br><br>
             <ul class="tramite-lst">
-              <li type="circle"><a class="link-tramite-p" targt="_blank" href="http://erpp.guanajuato.gob.mx/portaln/" target="_blank">Portal de Notarías</a></li>
-              <li type="circle"><a class="link-tramite-p" targt="_blank" href="http://www.erpp.guanajuato.gob.mx/dirnot/" target="_blank">Directorio Notarial</a></li>
-              <li type="circle"><a class="link-tramite-p" targt="_blank" href="http://normatividadestatalymunicipal.guanajuato.gob.mx" target="_blank">Legislación</a></li>
+                <li type="circle"><a class="link-tramite-p" targt="_blank" href="http://erpp.guanajuato.gob.mx/portaln/" target="_blank">Portal de Notarías</a></li>
+                <li type="circle"><a class="link-tramite-p" targt="_blank" href="http://www.erpp.guanajuato.gob.mx/dirnot/" target="_blank">Directorio Notarial</a></li>
+                <li type="circle"><a class="link-tramite-p" targt="_blank" href="http://normatividadestatalymunicipal.guanajuato.gob.mx" target="_blank">Legislación</a></li><br>
             </ul>
             <a class="ver-mas-ts" href='dnotarial.php'>Acerca de Dirección de Notarías</a>
         </div>
@@ -115,15 +113,15 @@
 
     <div class="wrapper grid2">
     <article class="col-7">
-        <img class="img-tp" src="images/logotipo.png">
+        <img class="img-tp" src="images/transparencia.jpg">
     </article>
 
     <article class="col-8">
             <ul class="transparencia">
-                <li><a href="oficinas_rpp.php">Directorio de Oficinas Registrales</a></li>
+                <li><a href="oficinasrpp.php">Directorio de Oficinas Registrales</a></li>
                 <li><a href="http://www.erpp.guanajuato.gob.mx/dirnot/">Directorio de Notarial</a></li>
                 <li><a href="estruct.php">Estructura orgánica</a></li>
-                <li><a href="http://finanzas.guanajuato.gob.mx/c_calendario/doc/CALENDARIO_DIAS_INHABILES_2017.pdf" target="_blank">Calenario</a></li>
+                <li><a href="http://finanzas.guanajuato.gob.mx/c_calendario/doc/CALENDARIO_DIAS_INHABILES_2017.pdf" target="_blank">Calendario</a></li>
             </ul>
 
             <ul class="transparencia">

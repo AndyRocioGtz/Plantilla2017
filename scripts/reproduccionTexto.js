@@ -1,49 +1,36 @@
 
 $(function(){
-   
     $('.accesibilidad').on("click",function(){
           mostrarAccesible();
-    });
-    $('#cerrarAccesible').on("click",function(){
-         
-         $('#moduloAccesibilidad').fadeTo(500,0);
-
     });
 
         $('#reconocimientoVoz').click(function(){
         if(readCookie('reconocimiento') === null){
             ejecutaComandos();
             createCookie('reconocimiento','1',1);
-            $("#reconocimientoVoz").html("<img class='accesible1' style='margin-left:6px;' title='Desactivar Microfono' src='http://www.guanajuato.gob.mx/presentaciones/images/mic_on.png'>");
+            $("#reconocimientoVoz").html("<img src='http://www.guanajuato.gob.mx/presentaciones/images/mic_on.png'>");
           }else{
             detenerComandos();
             eraseCookie('reconocimiento');
-            $("#reconocimientoVoz").html("<img class='accesible1' title='Activar Microfono' src='http://www.guanajuato.gob.mx/presentaciones/images/mic_off.png'>");
+            $("#reconocimientoVoz").html("<img src='http://www.guanajuato.gob.mx/presentaciones/images/mic_off.png'>");
 
           }
     });
-        $('#zoomin').on("click",function(){
-          $("body").addClass("aumentado");
-
-        });
-        $('#zoomout').on("click",function(){
-          $("body").removeClass("aumentado");
-
-        });
-
         $('#lecturaSeleccion').click(function(){
             
             if(readCookie('voz') === null){
             ejecutaVoz();
             createCookie('voz','1',1);
-            $("#lecturaSeleccion").html("<img class='accesible1' title='Desactivar Lectura' src='http://www.guanajuato.gob.mx/presentaciones/images/sound_on.png'>");
+            $("#lecturaSeleccion").html("<img src='http://www.guanajuato.gob.mx/presentaciones/images/sound_on.png'>");
           }else{
             
             eraseCookie('voz');
-            $("#lecturaSeleccion").html("<img class='accesible1' title='Activar Lectura' src='http://www.guanajuato.gob.mx/presentaciones/images/sound_off.png'>");
+            $("#lecturaSeleccion").html("<img src='http://www.guanajuato.gob.mx/presentaciones/images/sound_off.png'>");
 
           }
         });
+
+    
 
 });
 
@@ -55,46 +42,13 @@ function ejecutaVoz(){
 }
 
 function ejecutaComandos(){
-  var altodoc = $(document).height();
-  var bajar =0;
         if (annyang) {
      // Let's define our first command. First the text we expect, and then the function it should call
      var commands = {
      'inicio': function() {
          //window.location.href="index.php";
-         
-         window.location.href="index.php"
-      },
-      'conocenos': function() {
-         //window.location.href="index.php";
-         
-         window.location.href="conocenos.php"
-      },
-      'inicio de pagina': function(){
-              //window.scrollTo(0, 0);
-              $("html, body").animate({ scrollTop: 0 }, 100);
-      },
-      'fin de pagina': function(){
-              //j(document).animate({ scrollTop: j(document).height()}, 1000);
-              $("html, body").animate({ scrollTop: $(document).height() }, 100);
-      },
-      'baja': function(){
-              //j(document).animate({ scrollTop: j(document).height()}, 1000);
-              if(altodoc > bajar){
-                bajar = $(window).scrollTop();
-                bajar = bajar+300;
-              }
-              $("html, body").animate({ scrollTop: bajar }, 100);
-      },
-      'sube': function(){
-              //j(document).animate({ scrollTop: j(document).height()}, 1000);
-              if(0 < bajar){
-                bajar = $(window).scrollTop();
-                bajar = bajar-300;
-              }
-              $("html, body").animate({ scrollTop: bajar }, 100);
+         alert("dfd");
       }
-
      };
 
      // Add our commands to annyang
@@ -139,8 +93,9 @@ function ejecutaComandos(){
       }
 
       function mostrarAccesible(){
+          $("#moduloAccesibilidad").css("display","block");
           $("#reconocimientoVoz").css("margin-left","0px");
-          $('#moduloAccesibilidad').fadeTo(500,1);
-          
-      
+          $("#cerrarAccesible").html("<img class='accesible1' src='http://www.guanajuato.gob.mx/presentaciones/images/close_accesibilidad.png'>");
+          $("#lecturaSeleccion").html("<img class='accesible1' src='http://www.guanajuato.gob.mx/presentaciones/images/sound_off.png'>");
+          $("#reconocimientoVoz").html("<img class='accesible1' src='http://www.guanajuato.gob.mx/presentaciones/images/mic_off.png'>");
       }
