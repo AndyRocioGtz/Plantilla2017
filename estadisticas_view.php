@@ -1,8 +1,18 @@
-    <div class="wrapper grid2">
-    <div style=" padding-bottom: 20px; width: 100%;">
-      <article class="col-12">
-        <div align="justify">
-         <div class="tramite-lst" align="center">
+<div class="wrapper grid2">
+    <article class="col-2">
+     <ul class="enlaces">
+         <li><a href="segurenet.php">SEGUREnet</a></li>
+         <li><a href="consultaremota.php">Consulta Remota</a></li>
+         <li><a href="estadisticas.php">Estadísticas</a></li>
+         <li><a href="estruct.php">Estructura General</a></li>
+         <li><a href="dg.php">Registros Públicos</a></li>
+         <li><a href="dnotarial.php">Dirección de Notarías</a></li>
+     </ul>
+    </article>
+    <article class="col-4">
+           <div class="wrapper grid2">
+                <article class="col-4" align="justify">
+                    <div class="tramite-lst">
           <center><h1 class="titulo">Estadísticas</h1>
           </center>
           <br><br>
@@ -54,7 +64,7 @@
                 </tr>
 
                 <tr>
-                  <td>Suspenciones</td>
+                  <td>Suspensiones</td>
                   <td>81,145</td>
                 </tr>
 
@@ -116,7 +126,7 @@
                 </tr>
 
                 <tr>
-                  <td>Suspenciones</td>
+                  <td>Suspensiones</td>
                   <td>74,600</td>
                 </tr>
 
@@ -177,14 +187,14 @@
                 </tr>
 
                 <tr>
-                  <td>Suspenciones</td>
+                  <td>Suspensiones</td>
                   <td>62,028</td>
                 </tr>
 
               </tbody>
             </table>
             </div>
-           </div> 
+           </div>
         </article>
       </div>
     </div>

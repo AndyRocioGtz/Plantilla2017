@@ -5,6 +5,8 @@
             <li><a href="consultaremota.php">Consulta Remota</a></li>
             <li><a href="estadisticas.php">Estadísticas</a></li>
             <li><a href="estruct.php">Estructura General</a></li>
+            <li><a href="dg.php">Registros Públicos</a></li>
+            <li><a href="dnotarial.php">Dirección de Notarías</a></li>
         </ul>
 
     </article>
@@ -13,7 +15,7 @@
             <article class="col-4" align="justify">
                 <div class="tramite-lst">
                     <label class="titulo">SEGUREnet</label>
-                    <p>
+                    <p align="justify">
                         SEGUREnet es el portal de Internet mediante el cual el Gobierno del Estado
                         de Guanajuato, a través del Registro Público de la Propiedad, brinda los servicios
                         de Inscripción y Certificación no presencial correspondientes a dicha Unidad Administrativa.
